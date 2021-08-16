@@ -1,0 +1,151 @@
+<!-- Le decimos al navegador que estandar estamos usando -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Informacion importante para el navegador-->
+	<meta charset="utf-8"> <!--Cifrado de los caracteres-->
+	<meta name="description" content="Primera prueba de HTML">
+	<meta name="author" content="BrAz">
+	<meta name="keywords" content="BrAz, blog, HTML">
+	<link rel="shortcut icon" href="logo.ico" />
+	<link rel="stylesheet" type="text/css" href="Estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic" rel="stylesheet">
+	<!--Estamos solicidanto la fuente de internet para los estilos-->
+	<title>Blog BrAz</title>
+	<!--<style>
+		#cabecera{  # para ID (especialmente para un elemento; de ahi su nombre)
+
+		}
+
+
+		.clase{ . para clases (estilos que se reutilizan)
+	
+		}
+
+		* { el * es el selector universal
+	
+		}
+
+		elemento[atributo]{ los [] son para especificar los elementos por el atributo que tengan
+	
+		}
+
+		elemento{
+			background: black; (forma de aplicar estilos en el mismo documento HTML)
+		}
+	lo normal es hacerlo en un archivo aparte
+	</style>--> 
+</head>
+
+<!-- Representa lo visbile para el navegador -->
+
+<body>
+
+	<div id="Agrupacion"> <!--Lo usamos para separar cosas (no le dicen nada al navegador, pero sirve para organizar los estilos)-->
+
+		<header> <!-- Aqui se pone el menu de navegacion, el titulo, redes sociales, etc. -->
+		
+			<h1 class="titulo">Mi Blog</h1> <!--style="color: darkred;" Ejemplo de in-line-style(cosa que no es recomendable en proyectos grandes)-->
+	
+	<nav class="menu">
+		<ul> <!--lista desordenada (unnorder list)-->
+
+		<li><a href="Principal/Principal.html">Principal</a></li>
+		<li><a href="Ayuda/Ayuda.html">Ayuda</a></li>
+		<li><a href="Contacto/Contacto.html">Contacto</a></li>
+		
+		</ul>	
+		
+		</header>
+		<main>
+	</nav>
+	
+	<section class="seccion">
+
+		<time datetime="5-07-2021">Lunes 5 de Julio</time>
+				
+		<article>
+
+			<hgroup> <!--Separar los h's del resto para respetar jerarquia-->
+
+			<h1>Titulo 1er articulo</h1>
+			<h2>Subtitulo</h2>
+			
+			</hgroup>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut <small>Texto chiquito</small> labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <span>Texto para referenciacion</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute <b>Texto marcado</b> irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat <cite>Esto es una cita</cite> nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<img src="imagen prueba.jpg" alt="Prueba"> <!--width="500px" height="400px" Alto y ancho respectivamente (es importante respetar proporciones o la imagen se estirara)-->
+
+			<footer> <!--Los demas elementos tambien pueden tener footers-->
+				
+				<p>Comentario</p>
+
+			</footer>
+
+			<address> <!--Especificar al navegador que hay una direccion de internet-->	
+
+			<a href="https://www.google.com/?hl=es" target="_BLANK">Link para acceder a google</a> <!--Manera para insertar enlaces y el _BLANK para una pestaña aparte-->				
+			
+			</address>
+
+		</article>
+
+		<time datetime="5-07-2021">Lunes 5 de Julio</time>
+		
+		<article>
+
+			
+			<hgroup>
+			
+			<h1>Titulod 2do articulo</h1>
+			<h2>Subtitulo</h2>
+
+			</hgroup>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<img src="max.gif" alt="Prueba gif" id="gif">
+
+			<footer> 
+				
+				<p>Comentario 2</p>
+
+			</footer>	
+
+		</article>
+	</section>
+
+	<aside class="columna">
+
+		Acerca de
+
+		<blockquote cite="www.pagina.com">
+			
+			By BrAz
+
+		</blockquote>
+
+	</aside>
+
+		</main>
+</body>
+<footer class="pie">
+
+	Derechos reservados G59
+
+	</div>
+
+</footer>
+</html>
+

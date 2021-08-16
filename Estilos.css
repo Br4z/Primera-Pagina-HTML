@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*
+		#cabecera {  # para ID (especialmente para un elemento; de ahi su nombre)
+
+		}
+
+
+		.clase { . para clases (estilos que se reutilizan)
+	
+		}
+
+		* { el * es el selector universal
+	
+		}
+
+		elemento[atributo]{ los [] son para especificar los elementos por el atributo que tengan
+	
+		}
+
+		elemento {
+			background: black; (forma de aplicar estilos en el mismo documento HTML)
+		}
+
+*/
+
+.titulo {
+
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+  background-color: #f8bbd0;
+  border-bottom: 1px solid black;
+
+}
+/* Es equivalente a grosor-tamaño-fuente */
+
+/* Se pueden agrupar elemento para unas caracteristicas compartidas (algo como evitar las clases) elemento1, elemento2 */
+
+/* La etiqueta display manipula la estructura de las cosas (block or inline-block) */
+
+body {
+  text-align: center;
+  background-color: #33314b;
+}
+
+#Agrupacion {
+  border: 2px solid black;
+  width: 960px;
+  margin: 15px auto;
+  background-color: #e2e2e2;
+  /* Esto es igual a margin: arriba-derecha-abajo-izquierda; */
+}
+
+.menu {
+  background-color: #e88cb2;
+  padding: 5px 2px 5px 2px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  max-width: 1000px;
+
+  /* Esto es igual a padding: arriba-derecha-abajo-izquierda; */
+}
+
+.menu li {
+  /* Esto quiere decir que va a afectar a todos los elementos que sean li y que esten en un elemento con la clase menu */
+
+  font-family: "Otomanopee One", sans-serif;
+  list-style: none;
+  padding: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu li a:hover {
+  /* Especificamos el evento (en este caso es cuando alguien pase el cursor encima del elemento) */
+
+  color: white;
+  background-color: #965b87;
+}
+
+.seccion {
+  margin: 20px;
+  width: 600px;
+  float: left;
+}
+
+article {
+  background-color: #d4caff;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 2px 4px 15px 0 black;
+  border-radius: 2%;
+}
+
+.columna {
+  width: 200px;
+  float: left;
+  margin: 20px 50px;
+  border: 1px solid black;
+}
+
+.pie {
+  clear: both;
+  background-color: #5c4368;
+  color: white;
+  border-top: 2px solid #7a7672;
+}
+
+article footer {
+  text-align: left;
+  margin: 10px 0px 0px 0px;
+}
+
+time {
+  color: #ff9832;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+  padding: 16px 0px;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+  margin: 20px auto;
+  border-radius: 2%;
+  border: 3px solid white;
+}
+
+#gif {
+  width: auto;
+}
+
+article h1 {
+  /* Los titulos de los articulos */
+
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+article h2 {
+  /* Los subtitulos de los articulos */
+
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+  margin: 0px 5px 10px 0px;
+  font-size: 15px;
+}
+
+p {
+  font-family: "Amatic SC", cursive;
+  font-size: 15px;
+  text-align: left;
+}
